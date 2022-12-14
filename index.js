@@ -13,9 +13,9 @@ if (process.env.PORT === "production") {
   //set static folder
   app.use(express.static("client/build"));
 
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-  });
+  // app.get("*", (req, res) => {
+  //   res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  //});
 }
 
 app.listen(PORT, () => {
@@ -52,12 +52,12 @@ app.get("/download", async (req, res) => {
   res.status(200).json(url);
 });
 
-app.get("/", (req, res, next) => {
-  res.status(200).json({
-    status: "success",
-    data: {
-      name: "name of your app",
-      version: "0.1.0",
-    },
-  });
-});
+// app.get("/", (req, res, next) => {
+//   res.status(200).json({
+//     status: "success",
+//     data: {
+//       name: "Skye-Website",
+//       version: "0.1.0",
+//     },
+//   });
+// });
