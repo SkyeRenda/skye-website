@@ -11,7 +11,7 @@ const app = express();
 //Serve static asses if in production
 if (process.env.PORT === "production") {
   //set static folder
-  app.use(express.static("skye-website/build"));
+  app.use(express.static("client/build"));
 
   app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
