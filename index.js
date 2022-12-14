@@ -14,9 +14,7 @@ if (process.env.PORT === "production") {
   app.use(express.static("skye-website/build"));
 
   app.get("*", (req, res) => {
-    res.sendFile(
-      path.resolve(__dirname, "skye-website", "build", "index.html")
-    );
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
 
