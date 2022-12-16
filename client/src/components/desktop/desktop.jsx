@@ -2,7 +2,9 @@ import React from "react";
 import "./desktop.css";
 import skyeCutImage from "../../images/skye-cut.png";
 
-export const Desktop = (url) => {
+export const Desktop = (props) => {
+  console.log(props.url);
+
   return (
     <div className="Front-Page">
       <img src={skyeCutImage} className="skye-cut-image" />
@@ -11,7 +13,7 @@ export const Desktop = (url) => {
         <h1>Skye Renda</h1>
         <h2>Software Developer</h2>
         <h2>Business Analyst</h2>
-        <a href={url} target="_blank" download>
+        <a href={props.url} target="_blank">
           <button className="Cv-Download">Download CV</button>
         </a>
       </div>

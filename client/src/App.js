@@ -11,7 +11,7 @@ function App() {
   const retrieveUrl = async () => {
     const response = await axios.get("/download");
     setUrl(response.data);
-    console.log(response.data);
+    console.log(url);
   };
 
   useEffect(() => {
