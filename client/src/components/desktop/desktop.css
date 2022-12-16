@@ -1,0 +1,84 @@
+.Front-Page {
+  position: relative;
+  height: auto;
+  width: auto;
+  display: flex;
+  padding-left: 74px;
+  padding-top: 180px;
+  vertical-align: top;
+}
+
+.Front-Page::before {
+  content: "";
+  background-image: url("../../images/clouds.jpg");
+  background-size: cover;
+  background-position: fixed;
+  position: absolute;
+  opacity: 0.4;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  z-index: -1;
+  height: 900x;
+}
+
+h2 {
+  color: rgba(0, 0, 0, 1);
+  font-size: 32px;
+  font-family: "Alef";
+  font-weight: 300;
+  margin: 0;
+  text-align: left;
+  padding: 10px;
+}
+h1 {
+  color: rgba(0, 0, 0, 1);
+  font-size: 96px;
+  font-family: "Alef";
+  font-weight: 300;
+  margin: 0;
+  text-align: left;
+}
+
+h3 {
+  color: rgba(0, 0, 0, 1);
+  font-size: 24px;
+  font-family: "Alef";
+  font-weight: 300;
+  margin: 0;
+  text-align: left;
+  padding: 10px;
+}
+
+.centre-text {
+  z-index: 2;
+  border: 20;
+  margin-left: 74px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.skye-cut-image {
+  width: 501px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.Cv-Download {
+  background-color: rgba(5, 66, 137, 0.7);
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  margin-top: 190px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 32px;
+  border-radius: 45px;
+  font-family: "Alef";
+  float: left;
+}
+
+.Cv-Download:hover {
+  background-color: lightblue;
+}

@@ -1,13 +1,10 @@
 import "./App.css";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Desktop } from "./components/desktop/desktop.component";
-import { Mobile } from "./components/mobile/mobile.component.jsx";
-import { useMediaQuery } from "react-responsive";
+import { Desktop } from "./components/desktop/desktop";
+import { Navbar } from "./components/navbar/navbar";
 
 function App() {
-  const response = "";
-
   const [url, setUrl] = useState();
   const [windowSize, setWindowSize] = useState(getWindowSize());
 
@@ -33,19 +30,11 @@ function App() {
     };
   }, []);
 
-  const isMobileDevice = useMediaQuery({
-    query: "(min-device-width: 450px)",
-  });
-
-  const isDesktop = useMediaQuery({
-    query: "(min-device-width: 1200px)",
-  });
-
   return (
     <div className="App">
       <div className="App-header">
-        {windowSize.innerWidth > "600" && <Desktop url={url} />}
-        {windowSize.innerWidth <= "600" && <Mobile url={url} />}
+        <Navbar />
+        {windowSize.innerWidth > "450" && <Desktop url={url} />}
       </div>
     </div>
   );
