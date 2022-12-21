@@ -2,6 +2,7 @@ import "./App.css";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Desktop } from "./components/desktop/desktop";
+import { Mobile } from "./components/mobile/mobile";
 import { Navbar } from "./components/navbar/navbar";
 
 function App() {
@@ -11,7 +12,6 @@ function App() {
   const retrieveUrl = async () => {
     const response = await axios.get("/download");
     setUrl(response.data);
-    console.log(url);
   };
 
   useEffect(() => {
@@ -33,8 +33,8 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-        <Navbar />
-        {windowSize.innerWidth > "450" && <Desktop url={url} />}
+        {windowSize.innerWidth > 800 && <Desktop url={url} />}
+        {windowSize.innerWidth <= 800 && <Mobile url={url} />}
       </div>
     </div>
   );

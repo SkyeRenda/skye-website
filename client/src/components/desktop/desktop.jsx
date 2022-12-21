@@ -3,8 +3,6 @@ import "./desktop.css";
 import skyeCutImage from "../../images/skye-cut.png";
 
 export const Desktop = (props) => {
-  console.log(props.url);
-
   return (
     <div className="Front-Page">
       <img src={skyeCutImage} className="skye-cut-image" />

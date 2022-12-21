@@ -1,0 +1,86 @@
+.Front-Page-Mobile {
+  position: relative;
+
+  display: inline-block;
+  vertical-align: top;
+}
+
+.Front-Page-Mobile::before {
+  content: "";
+  background-image: url("../../images/clouds.jpg");
+  background-size: cover;
+  background-position: fixed;
+  position: absolute;
+  opacity: 0.4;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  z-index: -1;
+  width: 100%;
+}
+
+.h2-Mobile {
+  color: rgba(0, 0, 0, 1);
+  font-size: 20px;
+  font-family: "Alef";
+  font-weight: 300;
+  margin: 0;
+  text-align: left;
+  margin-top: 15px;
+  margin-left: 24px;
+}
+.h1-Mobile {
+  color: rgba(0, 0, 0, 1);
+  font-size: 48px;
+  font-family: "Alef";
+  font-weight: 300;
+  margin: 0;
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 24px;
+}
+
+.h3-Mobile {
+  color: rgba(0, 0, 0, 1);
+  font-size: 20px;
+  font-family: "Alef";
+  font-weight: 300;
+  margin: 0;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.centre-text-Mobile {
+  z-index: 2;
+  border: 20;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.skye-cut-image-Mobile {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 24px;
+  margin-top: 30px;
+}
+
+.Cv-Download-Mobile {
+  background-color: rgba(5, 66, 137, 0.7);
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 45px;
+  font-family: "Alef";
+  margin-top: 30px;
+  float: left;
+  margin-left: 24px;
+}
+
+.Cv-Download-Mobile:hover {
+  background-color: lightblue;
+}
