@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Desktop } from "./components/desktop/desktop";
 import { Mobile } from "./components/mobile/mobile";
-import { Navbar } from "./components/navbar/navbar";
 
 function App() {
   const [url, setUrl] = useState();
