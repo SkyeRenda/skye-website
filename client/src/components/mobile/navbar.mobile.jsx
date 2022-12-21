@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import "./mobile.css";
 import { stack as Menu } from "react-burger-menu";
 
